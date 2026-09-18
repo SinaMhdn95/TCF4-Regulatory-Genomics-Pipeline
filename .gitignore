@@ -1,0 +1,56 @@
+# R and RStudio
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+renv/library/
+renv/staging/
+
+# Local configuration
+config/config.yml
+.env
+.env.*
+!.env.example
+
+# Raw, restricted, and intermediate data
+data/raw/**
+data/interim/**
+data/processed/**
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+*.bam
+*.bai
+*.sam
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bigWig
+*.bw
+*.narrowPeak
+*.broadPeak
+*.bed.gz
+
+# Generated analysis directories
+macs2_output/
+macs3_output/
+idr_output/
+meme_out/
+fimo_out/
+centrimo_out/
+results/tables/
+results/intermediate/
+
+# Local environments and operating-system files
+.venv/
+venv/
+env/
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+~$*

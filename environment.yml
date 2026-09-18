@@ -1,0 +1,12 @@
+name: tcf4-regulatory-genomics
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - r-base>=4.3
+  - python>=3.10
+  - macs2
+  - idr
+  - bedtools
+  - samtools
+  - meme

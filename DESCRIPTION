@@ -1,0 +1,39 @@
+Package: TCF4RegulatoryGenomics
+Type: Project
+Title: TCF4 Regulatory Genomics Integration Pipeline
+Version: 0.1.0
+Authors@R: person("Sina", "Mohammadian", role = c("aut", "cre"))
+Description: Research scripts for integrating TCF4 ChIP-seq peaks, gene-expression perturbation studies, epigenomic annotations, motifs, and disease-genetics evidence.
+License: file NOTICE.md
+Encoding: UTF-8
+Depends: R (>= 4.3)
+Imports:
+    AnnotationDbi,
+    bslib,
+    ChIPseeker,
+    clusterProfiler,
+    DESeq2,
+    dplyr,
+    DT,
+    enrichplot,
+    forcats,
+    GenomeInfoDb,
+    GenomicRanges,
+    GEOquery,
+    ggplot2,
+    limma,
+    lumi,
+    pheatmap,
+    purrr,
+    R.utils,
+    ReactomePA,
+    readr,
+    readxl,
+    rtracklayer,
+    shiny,
+    stringr,
+    tibble,
+    tidyr,
+    txdbmaker,
+    writexl,
+    yaml
