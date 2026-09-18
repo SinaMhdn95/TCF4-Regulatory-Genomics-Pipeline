@@ -1,0 +1,24 @@
+name: R syntax check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  parse-r-scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+      - name: Parse all R scripts
+        shell: Rscript {0}
+        run: |
+          files <- list.files(c("scripts", "app"), pattern = "[.]R$", recursive = TRUE, full.names = TRUE)
+          failures <- character()
+          for (file in files) {
+            tryCatch(parse(file = file), error = function(e) {
+              failures <<- c(failures, paste(file, conditionMessage(e), sep = ": "))
+            })
+          }
+          if (length(failures)) stop(paste(failures, collapse = "\n"))
+          message("Parsed ", length(files), " R scripts successfully.")
