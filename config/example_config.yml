@@ -1,0 +1,18 @@
+project:
+  genome_build: "hg19"
+  promoter_window_bp: 3000
+
+paths:
+  # Change this to the local directory containing authorized source datasets.
+  data_root: "data/raw"
+  interim: "data/interim"
+  processed: "data/processed"
+  results: "results"
+
+peak_sets:
+  npc: "data/raw/peaks/NPC_ab21_idr_500bp_summit.bed"
+  mcclay: "data/raw/peaks/McClay_TCF4_consensus_hg19.bed"
+  forrest: "data/raw/peaks/Forrest_hg19_peaks.bed"
+
+expression:
+  gandal_workbook: "data/raw/expression/gandal_table_s1.xlsx"
