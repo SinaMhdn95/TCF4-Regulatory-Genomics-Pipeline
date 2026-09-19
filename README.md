@@ -56,7 +56,9 @@ Detailed methods and script-to-stage mappings are in [`docs/PIPELINE.md`](docs/P
     ├── 03_disease_integration/# Disease-genetics and transcriptomic integration
     └── 04_reporting/          # Summary visualizations
 ```
+Since this is an ongoing project, some folders and materials are not currently available to the public. After the project is completed, the relevant data, scripts, and supporting materials will be uploaded to this repository, where permitted.
 
+I truly apologize for any inconvenience.
 
 ## Research use and privacy
 
